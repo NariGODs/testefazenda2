@@ -6,9 +6,9 @@
 ########################
 */
 	try {
-		$dns = "mysql:dbname=chat_php;host=localhost"; 
-		$user = "root";
-		$pass = "";
+		$dns = "mysql:dbname=chat_php;host=fazendamysql.mysql.database.azure.com";
+		$user = "felipe";
+		$pass = "P@ssw0rd";
 		$pdo = new PDO($dns, $user, $pass);
 	}catch (PDOException $e){
 		echo "Falha: ". $e->getMessage();
